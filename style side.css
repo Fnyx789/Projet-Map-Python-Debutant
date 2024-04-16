@@ -1,0 +1,305 @@
+/* Importation des polices */
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Ubuntu&display=swap");
+
+/* Réinitialisation des styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    background-color: #1a1c1e;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .reseau {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    margin-left: 20%;
+}
+
+.navbar:hover .reseau {
+    text-decoration: underline;
+    color: #8175a2;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    text-decoration: underline;
+    color: #8175a2;
+}
+
+.navbar li {
+    font-size: 1.75vw;
+    list-style-type: none;
+    padding: 1.5vh 2vw;
+    word-wrap: break-word;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    text-shadow: #4d4d4d 0px 10px 50vw;
+}
+
+#icone {
+    width: 5vw;
+    float: left;
+    height: 5vw;
+    padding-bottom: 2vh;
+    margin-top: 2.5vh;
+    margin-right: 2vw;
+}
+
+h2 {
+    color: black;
+    font-size: 2.22vw;
+}
+
+h1 {
+    font-size: 2.77vw;
+    text-align: center;
+    margin-top: 2.77vh;
+    color: white;
+    font-weight: bold;
+}
+
+
+h4 {
+    color: blanchedalmond;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #8a8c8e;
+}
+
+
+.jour {
+    order: 1;
+    margin-right: 5%;
+}
+
+.entree {
+    order: 2;
+    margin-left: 5%;
+}
+
+.Salades {
+    order: 3;
+    margin-right: 5%;
+}
+
+.classique {
+    order: 4;
+    margin-left: 5%;
+}
+
+.Fromage {
+    order: 5;
+    margin-right: 5%;
+}
+
+.Dessert {
+    order: 6;
+    margin-left: 5%;
+}
+
+.Alcool {
+    order: 7;
+    flex-basis: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: #9c0a43;
+    height: 420vh;
+}
+
+body {
+    background-color: #333;
+}
+
+body.abt {
+    background: url("/img/restaurant-meal-food-salad-eat-dinner-berlin-supper-brunch-kurf-rstendamm-italians-abendbrot-1066618-432052750.jpg");
+    background-size: cover;
+}
+
+#Menu {
+    margin-top: 350vh;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 50px;
+    margin: 70px;
+    background-color: #F8EFEF;
+    border-radius: 15px;
+    gap: 35px;
+}
+
+
+
+.plats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.plat {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#vin {
+    width: 3%;
+}
+
+body .context {
+    align-items: baseline;
+    display: flex;
+    justify-content: left;
+    left: 0;
+}
+
+.context {
+    padding: 50px;
+    margin: 4%;
+    background-color: #F8EFEF;
+    border-radius: 15px;
+    max-width: 800px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ensemble {
+    display: flex;
+}
+
+.context p {
+    margin-bottom: 1em;
+    /* Espacement entre les paragraphes */
+    font-size: 16px;
+    /* Taille de la police */
+    line-height: 1.6;
+    /* Hauteur de ligne */
+    color: #333;
+    /* Couleur du texte */
+    text-indent: 20px;
+    /* Retrait de la première ligne */
+    display: block;
+}
+
+.carte {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.Recap {
+    background: url("/img/image vin.jpg") center center;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 110vh;
+    text-align: justify;
+    background-position: bottom;
+}
+
+.infos {
+    margin-top: 250vw;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 50px;
+    margin: 70px;
+    background-color: #F8EFEF;
+    border-radius: 15px;
+    gap: 35px;
+    height: 80vh;
+}
+
+.recap h2 {
+    color: #1a1c1e;
+    font-family: "Eagle Lake", serif;
+}
+
+.parametres p {
+    font-size: 24px;
+    color: brown
+}
+
+.Quest {
+    color: white;
+    margin: 3%;
+    margin-left: 10%;
+    margin-bottom: 0%;
+}
+
+#ou {
+    margin-left: 72%;
+    margin-bottom: 0;
+    align-self: flex-end;
+}
+
+
+.comment {
+    margin-top: 250vw;
+    display: flex;
+    flex-direction: column;
+    width: 40% auto;
+    padding: 50px;
+    margin: 70px;
+    background: #F8EFEF;
+    border-radius: 15px;
+    gap: 35px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment p {
+    color: #1a1c1e;
+    font-size: 24px;
+}

@@ -1,0 +1,178 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'étoile Du Chef</title>
+    <link rel="stylesheet" href="/css/style accueil.css">
+</head>
+<body>
+
+<nav class="navbar">
+
+
+    <img id="icone" src="img/logo_vin-removebg-removebg-preview.png" alt="icone du restaurant" />
+    <ul>
+        <li><a href="index-PC-PLVD.html#Accueil">Accueil</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="#Horaire">Horaire & Réservation</a></li>
+        <li><a href="About.html">A propos</a></li>
+        <li><a href="About.html#Contact">Nous Contacter</a></li>
+    </ul>
+
+    <div class="reseau">
+        <img src="/img/facebook.png" alt="facebook">
+        <img src="/img/instagram.png" alt="instagram">
+    </div>
+</nav>
+<header>
+    <div class="Accueil" id="Accueil" src="Accueil">
+        <div class="ImageAcc">
+            <div class="OpacityHandler">
+                <h1 id="titreacc">L'étoile du chef</h1>
+                <img id="logo" src="/img/logo_vin-removebg-removebg-preview.png" alt="Logo site">
+                <h1 id="titreacc">L'étoile du chef</h1>
+                <a href="#Menu" class="cta">Voir la carte</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <section class="About" id="About">
+        <div class="AboutUs">
+            <h4 id="restaurant">LE RESTAURANT</h4>
+            <p>Le restaurant L'Étoile du Chef est un établissement gastronomique où chaque plat est soigneusement
+                préparé avec des ingrédients frais et de qualité. Notre chef passionné met tout en œuvre pour vous
+                offrir une expérience culinaire exceptionnelle. Nous comptons sur vous pour déguster nos vins autour
+                d'une oeuvre culinaire unique </p>
+            <div class="FlexContainer">
+                <!-- Parking -->
+                <div class="AboutSection">
+                    <h5>Où Nous Trouver</h5>
+                    <p>Nous disposons d'un parking spacieux pour garantir votre confort. Venez profiter de votre repas
+                        sans vous soucier du stationnement.</p>
+                </div>
+                <div class="AboutSection">
+                    <h5>Heures d'Ouverture</h5>
+                    <p>Découvrez nos délicieux plats aux heures suivantes :</p>
+                    <b>Lundi : Fermé</b> <br>
+                    <b>Mardi à Vendredi : 12h00 - 22h00</b> <br>
+                    <b>Samedi et Dimanche : 14h00 - 23h00</b>
+                </div>
+                <!-- Contact -->
+                <div class="AboutSection">
+                    <h5>Contactez-Nous</h5>
+                    <p>Pour toute demande, réservation ou information, n'hésitez pas à nous contacter. Notre équipe est
+                        à votre disposition pour répondre à vos besoins.</p>
+                </div>
+                <!-- Heures d'Ouverture -->
+            </div>
+        </div>
+    </section>
+
+    <article>
+        <div id="Menu">
+            <h2>Menu <img id="vin" src="/img/verres-a-vin.png" alt="icone vin"></h3>     
+                <h3>Plats du jour</h3>
+                <div class="plats">
+                    <div class="plat">
+                        <div class="plat-infos">
+                            <b>Lundi</b>
+                            <p>Fermé</p>
+                        </div>
+                        <div class="prix"></div>
+                    </div>
+                    <div class="plat">
+                        <div class="plat-infos">
+                            <b>Mardi</b>
+                            <p>Penne au spec</p>
+                        </div>
+                        <div class="prix">12.90</div>
+                    </div>
+                    <div class="plat">
+                        <div class="plat-infos">
+                            <b>Mercredi</b>
+                            <p>Filet de boeuf</p>
+                        </div>
+                        <div class="prix">15.90</div>
+                    </div>
+                    <div class="plat">
+                        <div class="plat-infos">
+                            <b>Jeudi</b>
+                            <p>Salade César</p>
+                        </div>
+                        <div class="prix">10.90</div>
+                    </div>
+                    <div class="plat">
+                        <div class="plat-infos">
+                            <b>Vendredi</b>
+                            <p>Salade de chèvre chaud</p>
+                        </div>
+                        <div class="prix">10.90</div>
+                    </div>
+                    <div class="plat">
+                        <div class="plat-infos">
+                            <b>Plat de la semaine</b>
+                            <p>Filet de boeuf</p>
+                        </div>
+                        <div class="prix">15.90</div>
+                    </div>
+                </div>
+        </div>
+        <a href="Menu.html" class="cta">Voir la carte complète</a>
+    </article>
+    
+    
+    <div class="Gallery">
+        <div id="galerie">
+            <a id="redirect" href="Gallery"> Nos créations</a>
+        </div>
+        <div id="photo">
+            <img src="/img/filet-de-boeuf-sauce-grand-veneur1-3115390395.jpg" alt="">
+            <img src="/img/quelques-vins-a-decouviri-1620472516.jpg" alt="">
+            <img src="/img/i93382-salade-chevre-794258516.jpg" alt="">
+        </div>
+    </div>
+
+    <aside class="infos" id="Horaire">
+        <div class="Reservation">
+            <h3>Reservation </h3>
+            <form action="form.php" method="post">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="Date" required placeholder="01/01/2024">
+                <br><br>
+                <label for="time">Heure:</label>
+                <input type="time" id="time" name="Heure" required placeholder="12:00">
+                <br><br>
+                <label for="name">Nom de réservation:</label>
+                <input type="text" id="name" name="Nom de réservation" required placeholder="José Dupont">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email" required placeholder="email.exemple@gmail.com">
+                <br><br>
+                <label for="phone">Numéro de téléphone:</label>
+                <input type="tel" id="phone" name="Numéro de téléphone" required placeholder="+33 0 00 00 00">
+                <br><br>
+                <input type="submit" value="Soumettre" onclick="newpage()">
+            </form>
+            <br>
+        </div>
+    </aside>
+    
+    
+    <footer>
+        <p>&copy; Copyright 2021-2024
+            | L'Etoile Du Chef Restaurant Bistronomique .</p>
+    
+    </footer>
+    
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,528 @@
+/* Importation des polices */
+@import url("https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Ubuntu&display=swap");
+
+/* Réinitialisation des styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styles de la barre de navigation */
+.navbar {
+  background-color: #1a1c1e;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar .reseau {
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  margin-left: 20%;
+}
+
+.navbar:hover .reseau {
+  text-decoration: underline;
+  color: #8175a2;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar li:hover {
+  text-decoration: underline;
+  color: #8175a2;
+}
+
+.navbar li {
+  font-size: 1.75vw;
+  list-style-type: none;
+  padding: 1.5vh 2vw;
+  word-wrap: break-word;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  text-shadow: #4d4d4d 0px 10px 50vw;
+}
+
+#icone {
+  width: 5vw;
+  float: left;
+  height: 5vw;
+  padding-bottom: 2vh;
+  margin-top: 2.5vh;
+  margin-right: 2vw;
+}
+
+header {
+  padding-top: 12vh;
+}
+
+/* Styles de la section d'accueil */
+.ImageAcc {
+  background: url("/img/vin bar.jpg") center center;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  margin-top: -10vh;
+  box-shadow: inset 0 -15vh 7vw rgba(0, 0, 0, 0.8);
+}
+
+.ImageAcc .OpacityHandler {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ImageAcc #logo {
+  width: 27.77vw;
+  height: 27.77vw;
+}
+
+#titreacc {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 3.88vw;
+  color: white;
+  font-weight: bold;
+  margin-top: 2vh;
+  padding-left: 2vw;
+  font-family: "Eagle Lake", serif;
+}
+
+h2 {
+  color: black;
+  font-size: 2.22vw;
+}
+
+h1 {
+  font-size: 2.77vw;
+  text-align: center;
+  margin-top: 2.77vh;
+  color: white;
+  font-weight: bold;
+}
+
+.Acceuil {
+  margin-top: 4vh;
+  background-color: #f2f2f2;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.cta {
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 1.11vh 2.22vw;
+  text-decoration: none;
+  margin: 1.11vh 0;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2.22vh;
+}
+
+.cta {
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.cta:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Styles de la section "À propos" */
+.About {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 10px -150px rgba(0, 0, 0, 0.8);
+  margin-top: -10px;
+  height: 60vh;
+}
+
+h5 {
+  color: white;
+}
+
+h4 {
+  color: blanchedalmond;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #8a8c8e;
+}
+
+.AboutUs {
+  margin-top: 2.5px;
+
+}
+
+.FlexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3.5em;
+  margin-bottom: 3.125em;
+  font-size: 20px;
+  background-color: #1a1c1e;
+  box-shadow: inset 0 20px 50px rgba(0, 0, 0, 1);
+  margin-bottom: 10px;
+}
+
+.AboutSection {
+  flex: 1;  
+  background-color: #333;
+  color: #fff;
+  padding: 1.5em;
+  margin: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.AboutSection h5 {
+  font-size: 24px;
+}
+
+.AboutSection p {
+  line-height: 1.5;
+}
+
+/* Styles de la section "Menu" */
+.jour {
+  order: 1;
+  margin-right: 5%;
+}
+
+.entree {
+  order: 2;
+  margin-left: 5%;
+}
+
+.Salades {
+  order: 3;
+  margin-right: 5%;
+}
+
+.classique {
+  order: 4;
+  margin-left: 5%;
+}
+
+.Fromage {
+  order: 5;
+  margin-right: 5%;
+}
+
+.Dessert {
+  order: 6;
+  margin-left: 5%;
+}
+
+.Alcool {
+  order: 7;
+  flex-basis: 100%;
+  margin: 0 auto;
+}
+
+/* Styles du conteneur général */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-color: #9c0a43;
+}
+
+/* Styles du fond d'écran et de l'effet de flou */
+body {
+  background: url("/img/douglas-lopez-XzAh8B8HAvA-unsplash.jpg");
+  background: blur(80px);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.article img {
+  filter: blur(8px);
+}
+
+/* Styles de la section "Menu" */
+#Menu {
+  margin-top: 250vw;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 50px;
+  margin: 70px;
+  background-color: #F8EFEF;
+  border-radius: 15px;
+  gap: 35px;
+}
+
+.plats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.plat {
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles du formulaire de réservation */
+form {
+  width: 100%;
+  height: 5%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #4d4d4d;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #4d4d4d;
+  background-color: #f2f2f2;
+  font-size: 24px;
+  color: #4d4d4d;
+}
+
+input[type="submit"] {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+input[type="submit"]:hover {
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+}
+
+/* Styles de la section "Réservation" */
+.Reservation {
+  max-width: 800px;
+  width: 30%;
+  background-color: #f2f2f2;
+  padding: 0.8em;
+  border-radius: 15px;
+  float: right;
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 10);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 36px;
+  color: #4d4d4d;
+  margin-right: 5%;
+  margin-bottom: 100px;
+}
+
+.Reservation h3 {
+  color: #333;
+  font-size: 58px;
+  margin-top: 5%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-top: 3em;
+  font-size: 18px;
+  color: #4d4d4d;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #4d4d4d;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #4d4d4d;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #f2f2f2;
+  color: #4d4d4d;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+
+.day {
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.day.selected {
+  background-color: #4d4d4d;
+  color: #f2f2f2;
+}
+
+/* Styles du pied de page */
+footer {
+  background-color: #1a1c1e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}
+
+/* Styles de la section "Menu" */
+#vin {
+  width: 3%;
+}
+
+.Reservation form {
+  width: 80%;
+  margin-top: 98px;
+}
+
+/* Styles de la section "Galerie" */
+.Gallery img {
+  height: 20em;
+  width: 20em;
+  max-width: 100%;
+
+  flex-basis: calc(33.33% - 75px);
+  margin: 20px;
+  margin-left: 128px;
+}
+
+.Gallery {
+  display: flex;
+  background-color: #5A3443;
+  width: 90%;
+  border-radius: 15px;
+  flex-direction: column;
+  margin: 4em auto;
+  padding-top: 55px;
+}
+
+#galerie a {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  padding: 1.11vh 2.22vw;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#galerie a:hover {
+  text-decoration: underline;
+  background-color: #F8EFEF;  
+  color: #5A3443;
+}
+
+.Gallery p {
+  align-items: flex-start;
+  text-align: center;
+}
+
+#photo {
+  padding: 5%;
+}
+
+#galerie {
+  text-align: center;
+  align-self: center;
+}
+
+#redirect{
+  margin: 0 auto;
+}
